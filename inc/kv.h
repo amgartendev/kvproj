@@ -1,5 +1,6 @@
 #ifndef KV_H
 #define KV_H
+#define TOMBSTONE ((void*)1)
 
 #include <stdlib.h>
 
@@ -15,5 +16,6 @@ typedef struct {
 } kv_t;
 
 kv_t *kv_init(size_t capcaity);
+int kv_put(kv_t *db, char *key, char *value);
 
 #endif

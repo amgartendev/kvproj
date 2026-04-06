@@ -1,6 +1,6 @@
 #ifndef KV_H
 #define KV_H
-#define TOMBSTONE ((void*)1)
+#define TOMBSTONE ((char *)1)
 
 #include <stdlib.h>
 
